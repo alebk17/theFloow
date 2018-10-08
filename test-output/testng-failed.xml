@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="device" value="192.168.220.101:5555"/>
+    <parameter name="version" value="8.0"/>
+    <classes>
+      <class name="com.framework.tests.TheFloowTests">
+        <methods>
+          <include name="Setup"/>
+          <include name="tearDown"/>
+          <include name="changePassword"/>
+          <include name="userLoginTest"/>
+        </methods>
+      </class> <!-- com.framework.tests.TheFloowTests -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
